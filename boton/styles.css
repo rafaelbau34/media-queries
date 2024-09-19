@@ -1,0 +1,78 @@
+.ewert-regular {
+  font-family: "Ewert", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.areaDeBotones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* vamos a agregar color, estilo, letra y distribucion */
+
+button {
+  margin: 40px;
+  width: 180px;
+  height: 100px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: blueviolet;
+}
+
+/* estilos para celular con media queryes */
+@media only screen and (max-width: 600px) {
+  .areaDeBotones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* vamos a agregar color, estilo, letra y distribucion */
+
+  button {
+    margin: 40px;
+    width: 180px;
+    height: 100px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+}
+
+/* Tarea
+Investigar medidas de una tableta 
+Realizar ajustes de boton en tableta
+cambiar a color verde en tableta
+*/
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .areaDeBotones {
+    display: flex;
+    flex-direction: row; /* Cambiamos a fila para tabletas */
+    justify-content: space-around; /* Espaciado entre botones */
+    align-items: center;
+    height: 100vh;
+  }
+
+  button {
+    margin: 20px; /* Ajustamos el margen para tabletas */
+    width: 150px; /* Cambiamos el ancho */
+    height: 80px; /* Cambiamos la altura */
+    background-color: green; /* Cambiamos el color de fondo a verde */
+    color: white; /* Color del texto */
+  }
+
+  button:hover {
+    background-color: darkgreen; /* Color en hover */
+  }
+}
